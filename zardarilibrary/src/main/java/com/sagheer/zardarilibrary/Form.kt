@@ -1,6 +1,6 @@
 package com.sagheer.zardarilibrary
 
-import android.app.Activity
+import android.app.Application
 import android.util.Patterns
 import android.widget.Toast
 
@@ -25,9 +25,9 @@ fun isPassContainingSmallCapitalAndNumber(pass: String): Boolean {
 }
 
 fun shortToast(message: String) {
-    Toast.makeText(Activity(), message, Toast.LENGTH_SHORT).show()
+    Toast.makeText(Application(), message, Toast.LENGTH_SHORT).show()
 }
 
 fun longToast(message: String) {
-    Toast.makeText(Activity(), message, Toast.LENGTH_LONG).show()
+    Toast.makeText(Application(), message, Toast.LENGTH_LONG).show()
 }
