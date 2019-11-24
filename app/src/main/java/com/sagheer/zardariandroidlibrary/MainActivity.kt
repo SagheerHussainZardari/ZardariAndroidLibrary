@@ -1,8 +1,8 @@
 package com.sagheer.zardariandroidlibrary
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.sagheer.zardarilibrary.longToast
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,13 +10,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        shortToast("sagheer")
-
+        longToast("Sagheer Zardari")
 
     }
 
-    fun shortToast(message: String) {
-        Toast.makeText(application, message, Toast.LENGTH_SHORT).show()
-    }
 
 }
